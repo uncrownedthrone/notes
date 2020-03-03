@@ -1,0 +1,66 @@
+1. What is equality in JavaScript?
+== allows for type cohersion
+=== does not allow for type cohersion
+
+2. Explain Null and Undefined in JavaScript
+null = means something isn't available
+undefined = means something hasn't been initialized
+
+3. What is scope in JavaScript?
+Each function has its own scope in JS and the variables inside of that scope are only available to that function.
+
+4. Explain Values and Types in JavaScript
+A type describes a value. For example, 2 is a value and type would be integer
+** JS has typed values, not typed variables **
+
+5. What is the typeof operator?
+It will tell you what type a value isn
+
+6. What is the object type?
+An object can have its own set properies and hold values of any type
+
+7. Explain arrays in JS
+An array is a type of object that can hold values of any type but not particularly in named properties. values are held in indexed positions
+
+8. What is strict mode?
+This is a mode that will only allow you to type out JS with more specific and "strict" rules that will throw more errors or prevent you from taking certain actions
+
+9. What is the difference between var, let, and const variables?
+let - block scope variable - can be redeclared/reassigned
+var - global scope variable - can be redeclared/reassigned
+const - block scope variable - cannot be redeclared/reassigned
+
+10. Being told that an unsorted array contains (n - 1) of n consecutive numbers (where the bounds are defined), find the missing number in O(n) time
+
+var arrayOfIntegers = [2, 5, 1, 4, 9, 6, 3, 7]
+var upperBound = 9;
+var lowerBound = 1;
+
+findMissingNumber(arrayOfIntegers, upperBound, lowerBound)
+
+const findMissingNumber = () => {
+  var sumOfIntegers = 0
+  for (let i = 0; i < arrayOfIntegers.length; i++) {
+    sumOfIntegers += arrayOfIntegers[i]
+  }
+}
+
+11. Given a string, reverse each word in the sentence.
+"Welcome to this JavaScript Guide!"
+
+var string = "Welcome to this JavaScript Guide!"
+
+string.split("").reverse().join("")
+
+this takes the variable string, splits it into individual letters, and then reverses the order, and joins them back together
+
+12. How to empty an array in JavaScript?
+var arrayList = [1, 2, 3, 4]
+
+As long as there are no other references to the array, you can do:
+var arrayList = [] // this sets arrayList to a new, blank array
+If there are other references, you want to keep the same array:
+arrayList.length = 0 // this will set the length to 0, clearing it
+
+13. How do you check if a number is an integer?
+typeOf will work and so will dividing by one to see if there is a remainder

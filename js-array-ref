@@ -1,0 +1,42 @@
+Array objects are used to store multiple values in a single variable
+Indexes are zero-based [0, 1, 2]
+
+-- Properties --
+constructor - returns the function that created the array's objects
+length - sets or returns the number of elements in an array
+prototype - allows you to add properties and methods to an array
+
+-- Methods --
+Common
+filter() create a new array with every element from an array that passes a test
+find() returns a value of the first element in an array that passes a test
+forEach() calls a function for each array element
+includes() check if array contains the specified element
+indexOf() search the array for an element and return its position
+map() creates a new array with the result of calling a function for each element
+pop() removes the last element of an array and returns that element
+push() adds new element to the end of an array
+reduce() reduce the values of a single array to a single value - left to right
+shift() removes the first element of an array and returns that element
+slice() selects part of an array and returns the new array
+splice() adds/removes elements from an array
+toString() convert an array to a string and return the result
+
+Uncommon
+concat() joins two or more arrays, and returns a copy of the joined arrays
+copyWithin() copies array elements within the array, to and from specificed spots
+entries() returns a key/value pair Array Iteration Object
+every() checks if every element in an array passes a test
+fill() fill the elements in an array with a static value
+findIndex() returns the index in an array that passes a test
+from() calls a function for each array element
+lastIndexOf() search the array (from end) for an element and return its position
+isArray() checks whether an object is an array
+join() joins all elements of an array into a string
+keys() returns an Array Iteration Object
+reduceRight() same as above - right to left
+reverse() reverses the order of the elements in array
+some() checks if any of the elements in an arary pass a test
+sort() sorts the elements of an array
+unshift() adds new elements to beginning of array and returns new length
+valueOf() returns the primtive value of an array

@@ -1,0 +1,63 @@
+JavaScript Operator Reference
+
+
+-- Arithmetic --
++ ADD     - SUBTRACT      * MULTIPLY      / DIVIDE
+++ INCREMENT    -- DECREMENT
+
+% Modulus (division remainder)
+This can be used to determine whether a number is even or odd
+if (i % 3 === 0) console.log('is divisible by three')
+this means that if i is divisible by 3, the console will print out
+'is divisible by three'
+
+-- Assignment --
+= ASSIGN value to variable
++= example x += y same as x = x + y
+-= example x -= y same as x = x - y
+%= example x %= y same as x = x % y
+
+-- String --
++ will add two strings together
++= will add two strings together
+
+-- Comparison --
+== equal to (allows type cohersion)
+=== equal value and type (disallows type cohersion)
+!= not equal
+!== not equal value or type (disallows type cohersion)
+> greater than      < less than      > greater than/equal     < less than/equal
+
+
+-- Conditional --
+condition ? value if true : value if false
+++i%3 ? '' : 'fizz'
+
+this is checking whether the condition of ++i%3 is true
+if it is, then it will print an empty string ''
+if false, it will print 'fizz'
+
+-- Logical --
+&& and example (x < 10 && y > 1)      // true
+|| or  example (x === 5 || y ==== 5)  // false
+! not  example !(x === y)             // true
+
+-- typeof --
+typeof 'Justin' // string
+typeof 2        // number
+typeof false    // boolean
+SPECIAL CASES
+typeof NaN      // number
+typeof array    // object
+typeof date     // object
+typeof null     // object
+
+
+-- Delete -- (DON'T USE)
+Deletes a property from an object
+var person = {firstName: 'John', lastName: 'Smith', age: 50, eyeColor: 'blue'}
+delete person.age // or delete person['age']
+
+this will delete both the value of the property and the property itself
+after deletion, the property cannot be used until it is added back
+delete is designed to work on object properties. it has no effect on variables
