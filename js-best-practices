@@ -1,0 +1,4 @@
+avoid global variables
+- they can be overwritten by other scripts
+- use local variables instead and learn how to use closure
+
